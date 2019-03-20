@@ -10,6 +10,13 @@ class App extends StatefulWidget {
 class AppState extends State<App> {
   int counter = 0;
 
+  void fetchImage() {
+    // Only modify state data inside 'setState' function
+    setState(() {
+      counter += 1;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,12 +27,7 @@ class AppState extends State<App> {
         ),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
-          onPressed: () {
-            // Only modify state data inside 'setState' function
-            setState(() {
-              counter += 1;
-            });
-          },
+          onPressed: fetchImage,
         ),
       ),
     );
