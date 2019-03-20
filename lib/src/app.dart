@@ -1,4 +1,3 @@
-// Import flutter helper library
 import 'package:flutter/material.dart';
 
 class App extends StatefulWidget {
@@ -8,11 +7,9 @@ class App extends StatefulWidget {
   }
 }
 
-// Create a class that will be our custom widget
-// This class must extend the 'StatelessWidget' base class
 class AppState extends State<App> {
-  // Must define a 'build' method that returns
-  // the widget that *this* widget will show
+  int counter = 0;
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
