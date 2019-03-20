@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' show get;
 import 'models/image_model.dart';
 import 'dart:convert';
+import 'widgets/images_list.dart';
 
 
 class App extends StatefulWidget {
@@ -34,7 +35,7 @@ class AppState extends State<App> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Text('$counter Images'),
+        body: ImageList(images),
         appBar: AppBar(
           title: Text('Lets see some images!'),
         ),
