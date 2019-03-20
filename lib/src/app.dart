@@ -2,7 +2,10 @@
 import 'package:flutter/material.dart';
 
 class App extends StatefulWidget {
-
+  @override
+  State<StatefulWidget> createState() {
+    return AppState();
+  }
 }
 
 // Create a class that will be our custom widget
