@@ -9,7 +9,7 @@ class App extends StatefulWidget {
 
 class AppState extends State<App> {
   int counter = 0;
-  
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,7 +20,10 @@ class AppState extends State<App> {
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
           onPressed: () {
-            print('Hi there!');
+            // Only modify state data inside 'setState' function
+            setState(() {
+              counter += 1;
+            });
           },
         ),
       ),
