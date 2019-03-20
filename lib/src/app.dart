@@ -14,6 +14,7 @@ class AppState extends State<App> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        body: Text('$counter Images'),
         appBar: AppBar(
           title: Text('Lets see some images!'),
         ),
